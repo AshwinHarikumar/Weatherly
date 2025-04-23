@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.16db1b01.css",
-    "main.js": "/static/js/main.742eb4c7.js",
+    "main.js": "/static/js/main.e3d361ce.js",
     "static/media/humidity.svg": "/static/media/humidity.d49e9f30f5ed097d7ecdbfb6f2744835.svg",
     "index.html": "/index.html",
     "main.16db1b01.css.map": "/static/css/main.16db1b01.css.map",
-    "main.742eb4c7.js.map": "/static/js/main.742eb4c7.js.map"
+    "main.e3d361ce.js.map": "/static/js/main.e3d361ce.js.map"
   },
   "entrypoints": [
     "static/css/main.16db1b01.css",
-    "static/js/main.742eb4c7.js"
+    "static/js/main.e3d361ce.js"
   ]
 }
