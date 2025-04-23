@@ -58,6 +58,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @media (max-width: 600px) {
+    padding: 16px 0;
+  }
 `;
 
 const Header = styled.header`
@@ -76,6 +80,10 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     gap: 12px;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+      gap: 8px;
+    }
   }
   p {
     font-size: 1.15rem;
@@ -84,6 +92,9 @@ const Header = styled.header`
     color: ${(props) => props.theme.color};
     opacity: 0.8;
     letter-spacing: 0.5px;
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -98,6 +109,12 @@ const Card = styled.div`
   text-align: center;
   backdrop-filter: blur(2px);
   color: ${(props) => props.theme.color};
+
+  @media (max-width: 600px) {
+    padding: 16px 8px;
+    margin: 12px auto;
+    max-width: 98vw;
+  }
 `;
 
 const SearchCard = styled(Card)`
@@ -110,6 +127,11 @@ const SearchCard = styled(Card)`
   max-width: 600px;
   width: 100%;
   color: #111;
+
+  @media (max-width: 600px) {
+    padding: 16px 8px;
+    max-width: 98vw;
+  }
 `;
 
 const Button = styled.button`
@@ -130,6 +152,10 @@ const Button = styled.button`
     color: #fff;
     box-shadow: 0 4px 16px rgba(0,0,0,0.13);
   }
+  @media (max-width: 600px) {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
 `;
 
 const FlexGrid = styled.div`
@@ -140,6 +166,16 @@ const FlexGrid = styled.div`
   align-items: stretch;
   width: 100%;
   margin-top: 12px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 8px;
+  }
 `;
 
 const ToggleButton = styled.button`
@@ -156,6 +192,12 @@ const ToggleButton = styled.button`
   transition: background 0.2s;
   &:hover {
     background: rgba(0,0,0,0.07);
+  }
+  @media (max-width: 600px) {
+    top: 12px;
+    right: 12px;
+    font-size: 1.3rem;
+    padding: 6px;
   }
 `;
 
@@ -177,6 +219,11 @@ const UnitToggle = styled.button`
     background: #0056b3;
     color: #fff;
     box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  }
+  @media (max-width: 600px) {
+    margin-left: 8px;
+    padding: 4px 10px;
+    font-size: 0.95rem;
   }
 `;
 
@@ -200,6 +247,15 @@ const SearchFab = styled.button`
   &:hover {
     background: #0056b3;
   }
+  @media (max-width: 600px) {
+    top: 12px;
+    left: 12px;
+    width: 36px;
+    height: 36px;
+    svg {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const SearchModalOverlay = styled.div`
@@ -221,6 +277,12 @@ const SearchModal = styled.div`
   max-width: 600px;
   width: 95vw;
   text-align: center;
+
+  @media (max-width: 600px) {
+    margin-top: 32px;
+    padding: 16px 8px;
+    max-width: 98vw;
+  }
 `;
 
 function App() {
